@@ -19,7 +19,7 @@ def run(args):
     l=Ledger(args.db)
     flow=Workflow(l)
     if args.cmd=="demo":
-        stats=l.ingest(csv_transactions(ROOT/"data"/"sample_bank.csv"),"csv-demo")
+        stats=l.ingest(csv_transactions(ROOT / "src" / "data" / "sample_bank.csv"),"csv-demo")
         proposed=flow.process(reasoner=args.reasoner)
         pretty({"mode":"safe local demo", "ingestion":stats,"agent_decisions":proposed,
                 "proposals":flow.l.list_proposals(),"posted_expenses":flow.summary(),"exceptions":flow.reconciler.exceptions(l)})
