@@ -1,0 +1,9 @@
+transaction_id,account_id,date,merchant,amount,currency,direction,pending
+bank-001,checking-demo,2026-10-01,Google Workspace,24.00,USD,expense,false
+bank-002,checking-demo,2026-10-02,Office Depot,89.50,USD,expense,false
+bank-003,checking-demo,2026-10-03,Uber Trip,18.75,USD,expense,false
+bank-004,checking-demo,2026-10-04,Cafe Downtown,13.25,USD,expense,false
+bank-005,checking-demo,2026-10-05,Unknown Shop,1250.00,USD,expense,false
+bank-006,checking-demo,2026-10-06,Transfer To Savings,350.00,USD,expense,false
+bank-007,checking-demo,2026-10-07,Customer Payment,2800.00,USD,income,false
+bank-008,checking-demo,2026-10-08,Cloud Hosting,45.99,USD,expense,true

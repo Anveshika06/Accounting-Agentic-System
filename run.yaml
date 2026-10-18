@@ -1,0 +1,6 @@
+setup:
+  - python -m pip install -r requirements.txt
+run:
+  - python -m unittest discover -s tests -v
+  - python src/app.py --db artifacts/evaluator.sqlite demo
+  - python src/eval.py

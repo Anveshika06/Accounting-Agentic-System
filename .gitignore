@@ -1,0 +1,9 @@
+artifacts/*
+!artifacts/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+.env
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

@@ -1,0 +1,16 @@
+services:
+  accounting-agent:
+    build: .
+    command: ["python", "src/app.py", "--db", "/app/artifacts/ledger.sqlite", "serve", "--host", "0.0.0.0", "--port", "8765"]
+    environment:
+      APP_TOKEN: ${APP_TOKEN:?Set APP_TOKEN (24+ chars) in a local .env file}
+      ALLOW_CONTAINER_BIND: '1'
+    ports:
+      - "127.0.0.1:8765:8765"
+    volumes:
+      - ./artifacts:/app/artifacts
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
