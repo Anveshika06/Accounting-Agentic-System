@@ -27,7 +27,7 @@ I chose a hybrid multi-agent workflow, where specialized components handle predi
 
 I deliberately avoid auto-paying bills, moving money, filing taxes, or claiming ledger reconciliation without review.
 
-I also examined existing systems such as Akaunting and Plaid [5-10] to understand how accounting records and bank transactions are managed in practice.
+I also examined existing systems such as Akaunting and Plaid [9-14] to understand how accounting records and bank transactions are managed in practice.
 
 This architecture prioritizes control, traceability, extensibility, and reproducibility over agent autonomy. 
 
