@@ -1,4 +1,4 @@
-# Workflow and Design Decisions
+# Thought Process, Workflow and Design Decisions
 
 ## Literature Review and Architecture Understanding
 
